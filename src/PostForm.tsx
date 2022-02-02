@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { Post } from "./Post";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Modal from 'react-modal';
 
 export function PostForm (props : {onSubmit:(post:Post)=>void, onClose:()=>void}) {
 
@@ -22,19 +25,18 @@ export function PostForm (props : {onSubmit:(post:Post)=>void, onClose:()=>void}
  }
 
 
-
     return (
         <div>
-        
+
         <form onSubmit={onSubmitHandler}>
             <label htmlFor="title">
                 Title
-            <input id='title' type="text"  />
+            <input id='title' type="text" autoFocus />
             </label>
    
             <label htmlFor="thought">
                 Thought
-            <input id='thought' type="text" />
+            <textarea id='thought' />
             </label>
             <button type='submit'>Add Post</button>
             <button onClick={onCloseHandler} className='cancelBtn'><span className="material-icons">cancel</span></button>

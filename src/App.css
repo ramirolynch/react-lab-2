@@ -2,12 +2,13 @@
 
 
 
+
 header {
  height:8vh;
  display:flex;
  justify-content: center;
  font-family: 'Homemade Apple', 'Dosis';
- font-size:24px;
+ font-size:30px;
  padding-top:2%;
  color:#03a9f4;
 }
@@ -58,7 +59,7 @@ background-color: #79c5e8;
   background-color: #03a9f4;
   border-radius: 1em;
   color:white;
-
+  font-size: 18px;
 }
 
 ul {
@@ -131,6 +132,7 @@ form > label {
 input[type=text]:first-of-type {
   border-radius:1em;
   height:30px;
+  margin-bottom:0.7em;
 }
 
 .cancelBtn {
@@ -138,8 +140,15 @@ input[type=text]:first-of-type {
   width:fit-content;
   margin:0;
   padding:0;
-  background-color: #79c5e8;
+  border:none;
   position:fixed;
-  top:-0.8em;
-  right:0.2em;
+  top:0.3em;
+  right:0.3em;
 }
+
+textarea {
+  height:100px;
+  border-radius:1em;
+  margin-bottom:1em;
+}
+
